@@ -1,5 +1,6 @@
 #include <iostream>
 #include <cmath>
+#include <iomanip>
 
 int main()
 {
@@ -19,7 +20,7 @@ int main()
         sn_1 = sin((sn_1*M_PI)/180);
     }
 
-    std::cout << s << std::endl;  // Gives same results for n >= 3. Giving s and/or sn_1 long double type doesn't solve this.
+    std::cout << std::setprecision(15) << s << std::endl;
 
     return 0;
 }
